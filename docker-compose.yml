@@ -2,12 +2,12 @@ services:
   github-actions-runner:
     image: evl8/esd-github-actions-runner
     environment:
-      - URL=<put the extracted url here>
-      - TOKEN=<put the extracted token here>
+      - URL=https://github.com/Anil-Topal/esd-github-actions-assignment
+      - TOKEN=AQ4Z5QOCGZJ2KDQOL6ZUYP3HJWPRI
     networks:
       - esd
   nexus:
-    image: sonatype/nexus:oss 
+    image: sonatypecommunity/nexus3
     ports:
     - "8081:8081"
     networks:
